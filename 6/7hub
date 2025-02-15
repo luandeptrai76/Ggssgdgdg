@@ -1,0 +1,96 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+
+       local Window = MakeWindow({
+         Hub = {
+         Title = "Thành Luân",
+         Animation = "6/7 hub"
+         },
+        Key = {
+        KeySystem = false,
+        Title = "Key System",
+        Description = "",
+        KeyLink = "",
+        Keys = {"1234"},
+        Notifi = {
+        Notifications = true,
+        CorrectKey = "Running the Script...",
+       Incorrectkey = "The key is incorrect",
+       CopyKeyLink = "Copied to Clipboard"
+      }
+    }
+  })
+
+       MinimizeButton({
+       Image = "http://www.roblox.com/asset/?id=134894363077250",
+       Size = {60, 60},
+       Color = Color3.fromRGB(10, 10, 10),
+       Corner = true,
+       Stroke = false,
+       StrokeColor = Color3.fromRGB(255, 0, 0)
+      })
+      
+------ Tab
+     local Tab1o = MakeTab({Name = "tất cả script"})
+     
+     
+-------TOGGLE 
+
+     Toggle = AddToggle(Tab1o, {
+      Name = "a",
+      Default = false,
+      Callback = function()
+
+     end
+    })
+    
+------- BUTTON
+    
+    AddButton(Tab1o, {
+     Name = "nicuse.xyz",
+    Callback = function()
+	  loadstring(game:HttpGet("https://nicuse.xyz/MainHub.lua"))()
+  end
+  })
+     AddButton(Tab1o, {
+     Name = "strix (tiếng việt)",
+    Callback = function()
+	 loadstring(game:HttpGet"https://scriptroblox.onrender.com/strix")()
+  end
+  })   AddButton(Tab1o, {
+     Name = "FIX LAG",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+  end
+  })   AddButton(Tab1o, {
+     Name = "ARCEUS X",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+  end
+  })   AddButton(Tab1o, {
+     Name = "alysse",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/NathTheDev/AlysseAndroid/main/loader.lua"))()
+  end
+  })   AddButton(Tab1o, {
+     Name = "FIX LAG",
+    Callback = function()
+	 
+  end
+  })
+----- Dropdown 
+
+  Dropdown = AddDropdown(Tab1o, {
+     Name = "a",
+     Options = {"test 1", "Test 2", "Test 3", "Test 4"},
+     Default = "Melee",
+     Callback = function()
+     end
+   })
+
+----- Section 
+   
+   Section = AddSection(Tab1o, {"a"})          
+
+----- Paragraph 
+                    
+   Paragraph = AddParagraph(Farm, {"a", ""})
